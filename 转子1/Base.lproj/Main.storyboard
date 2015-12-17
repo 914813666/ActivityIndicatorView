@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,21 +19,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BdG-Eo-ilL">
-                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <rect key="frame" x="275" y="475" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pVj-QT-NuF"/>
                                     <constraint firstAttribute="width" constant="50" id="v03-7e-sgU"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLk-68-lqk">
+                                <rect key="frame" x="213" y="562" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMk-zO-2Xr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2h-Tp-2Ys">
+                                <rect key="frame" x="120" y="562" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KcR-kE-G5M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BdG-Eo-ilL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JPO-ew-UZR"/>
-                            <constraint firstItem="BdG-Eo-ilL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yk8-jG-XMV"/>
+                            <constraint firstItem="L2h-Tp-2Ys" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="gmf-4a-4VP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L2h-Tp-2Ys" secondAttribute="bottom" constant="8" id="jX6-6h-19A"/>
+                            <constraint firstItem="PLk-68-lqk" firstAttribute="centerY" secondItem="L2h-Tp-2Ys" secondAttribute="centerY" id="piX-Rn-BuH"/>
+                            <constraint firstItem="PLk-68-lqk" firstAttribute="leading" secondItem="L2h-Tp-2Ys" secondAttribute="trailing" constant="61" id="qWc-Vu-873"/>
+                            <constraint firstItem="BdG-Eo-ilL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="yk8-jG-XMV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="BdG-Eo-ilL" id="Qmg-0b-u12"/>
+                        <outlet property="startBtn" destination="L2h-Tp-2Ys" id="2qq-1X-a15"/>
+                        <outlet property="stopBtn" destination="PLk-68-lqk" id="edS-Hm-QeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

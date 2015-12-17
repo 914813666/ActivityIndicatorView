@@ -29,6 +29,7 @@
 		0F4D7C021C214E5C00551471 /* loading_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4D7BF21C214E5C00551471 /* loading_7@2x.png */; };
 		0F4D7C031C214E5C00551471 /* loading_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4D7BF31C214E5C00551471 /* loading_8@2x.png */; };
 		0F4D7C041C214E5C00551471 /* loading_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F4D7BF41C214E5C00551471 /* loading_9@2x.png */; };
+		0F4D7C071C21522600551471 /* ZzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D7C061C21522600551471 /* ZzView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		0F4D7BF21C214E5C00551471 /* loading_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_7@2x.png"; sourceTree = "<group>"; };
 		0F4D7BF31C214E5C00551471 /* loading_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_8@2x.png"; sourceTree = "<group>"; };
 		0F4D7BF41C214E5C00551471 /* loading_9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_9@2x.png"; sourceTree = "<group>"; };
+		0F4D7C051C21522600551471 /* ZzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzView.h; sourceTree = "<group>"; };
+		0F4D7C061C21522600551471 /* ZzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				0F4D7BDB1C214E0E00551471 /* LaunchScreen.storyboard */,
 				0F4D7BDE1C214E0E00551471 /* Info.plist */,
 				0F4D7BCD1C214E0E00551471 /* Supporting Files */,
+				0F4D7C051C21522600551471 /* ZzView.h */,
+				0F4D7C061C21522600551471 /* ZzView.m */,
 			);
 			path = "转子1";
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			files = (
 				0F4D7BD51C214E0E00551471 /* ViewController.m in Sources */,
 				0F4D7BD21C214E0E00551471 /* AppDelegate.m in Sources */,
+				0F4D7C071C21522600551471 /* ZzView.m in Sources */,
 				0F4D7BCF1C214E0E00551471 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
