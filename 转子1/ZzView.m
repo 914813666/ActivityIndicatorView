@@ -100,60 +100,7 @@
         
         
     }
-    
-    
-//    //顶部7
-//    UILabel * topLabel = [self createCircleLabel:[UIColor redColor]];
-//    topLabel.center = CGPointMake(centerX, centerY - Distance );
-//    [self addSubview: topLabel];
-//    
-//    //底部 3
-//    UILabel * bottomLabel = [self createCircleLabel:[UIColor blueColor]];
-//    bottomLabel.center = CGPointMake(centerX, centerY + Distance);
-//    [self addSubview: bottomLabel];
-//    
-//    //左5
-//    UILabel * leftLabel = [self createCircleLabel: [UIColor grayColor]];
-//    leftLabel.center = CGPointMake(centerX - Distance , centerY);
-//    [self addSubview: leftLabel];
-//    
-//    //右1
-//    UILabel * rightLabel = [self createCircleLabel: [UIColor orangeColor]];
-//    rightLabel.center = CGPointMake(centerX + Distance, centerY);
-//    [self addSubview: rightLabel];
-//    
-//    
-// 
-//    //右上 0
-//    UILabel * topRightLabel = [self createCircleLabel:[UIColor yellowColor]];
-//    topRightLabel.center = CGPointMake(centerX + distance, centerY - distance);
-//    [self addSubview: topRightLabel];
-//    
-//    //右下 3
-//    UILabel * bottomRightLabel = [self createCircleLabel:[UIColor purpleColor]];
-//    bottomRightLabel.center = CGPointMake(centerX + distance, centerY + distance);
-//    [self addSubview: bottomRightLabel];
-//    
-//    //左上6
-//    UILabel * topLeftLabel = [self createCircleLabel: [UIColor greenColor]];
-//    topLeftLabel.center = CGPointMake(centerX - distance, centerY - distance);
-//    [self addSubview: topLeftLabel];
-//    
-//    //左下4
-//    UILabel * bottomLeftLabel = [self createCircleLabel: [UIColor colorWithRed:0.6 green:0.4 blue:0.2 alpha:1.0]];
-//    bottomLeftLabel.center = CGPointMake(centerX - distance, centerY + distance);
-//    [self addSubview: bottomLeftLabel];
-//    
-//    
-//    [_labels addObject: topRightLabel];
-//    [_labels addObject: rightLabel];
-//    [_labels addObject: bottomRightLabel];
-//    [_labels addObject: bottomLabel];
-//    [_labels addObject: bottomLeftLabel];
-//    [_labels addObject: leftLabel];
-//    [_labels addObject: topLeftLabel];
-//    [_labels addObject: topLabel];
-//
+
     
     //将原来大小分配为0.5 - 1.5 线性变化
     //透明度为 0.5 - 1 线性变化
@@ -173,7 +120,7 @@
         currentAlpha =  tmd * i  + 0.3;
         currentScale = fabs(multiple * i + 0.5);
         
-        NSLog(@"第%d个 currentAlpha =%f ,currentScale=%f",i+1,currentAlpha,currentScale);
+//        NSLog(@"第%d个 currentAlpha =%f ,currentScale=%f",i+1,currentAlpha,currentScale);
         [_currentScaleArray addObject: [NSNumber numberWithFloat:currentScale]];
         [_tmdArray addObject: [NSNumber numberWithFloat: currentAlpha]];
     }
