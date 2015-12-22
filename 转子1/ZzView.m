@@ -24,6 +24,8 @@
 @property (nonatomic, strong) NSMutableArray * tmdArray;
 @property (nonatomic, strong) NSArray * colors;
 
+@property (nonatomic, strong) UILabel * textLabel;
+
 @end
 
 @implementation ZzView
@@ -68,28 +70,28 @@
         UILabel * colorLabel = [self createCircleLabel: cColor];
      
         switch (i) {
-            case 0:
+            case 0: //右上
                 colorLabel.center = CGPointMake(centerX + distance, centerY - distance);
                 break;
-                case 1:
+                case 1: //右
                 colorLabel.center = CGPointMake(centerX + Distance, centerY);
                 break;
-                case 2:
+                case 2: //右下
                 colorLabel.center = CGPointMake(centerX + distance, centerY + distance);
                 break;
-                case 3:
+                case 3: //下
                 colorLabel.center = CGPointMake(centerX, centerY + Distance);
                 break;
-                case 4:
+                case 4: //左下
                 colorLabel.center  = CGPointMake(centerX - distance, centerY + distance);
                 break;
-                case 5:
+                case 5: //左
                 colorLabel.center = CGPointMake(centerX - Distance , centerY);
                 break;
-                case 6:
+                case 6: //左上
                 colorLabel.center = CGPointMake(centerX - distance, centerY - distance);
                 break;
-                case 7:
+                case 7: //上
                 colorLabel.center = CGPointMake(centerX, centerY - Distance );
                 break;
             default:
@@ -107,8 +109,8 @@
     CGFloat multiple = (1.2 - 0.5) / _labels.count;
     CGFloat tmd = 0.8 / _labels.count;
     
-    NSLog(@"multiple =%f",multiple);
-    NSLog(@"temd =%f",tmd);
+//    NSLog(@"multiple =%f",multiple);
+//    NSLog(@"temd =%f",tmd);
     
     CGFloat currentScale = 0.5;
     CGFloat currentAlpha = 1;
@@ -126,8 +128,23 @@
     }
     
     
+    CGFloat maxHeight = CGRectGetMaxY(((UILabel *)_labels[3]).frame);
+    _textLabel = ({
+        UILabel * label = [[UILabel alloc] initWithFrame:
+                           CGRectMake(0, maxHeight, CGRectGetWidth(self.bounds), 40)];
+        label.numberOfLines = -1;
+        label.font = [UIFont systemFontOfSize:13];
+        label.textColor = _colors[0];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.text = self.showText;
+        [self addSubview: label];
+        label;
+    });
+    
 
 }
+
+
 
 - (void)dealloc {
     if (self.timer) {
@@ -136,7 +153,18 @@
     }
 }
 
+- (void)setShowText:(NSString *)showText {
+    if (_textLabel) {
+        _textLabel.text = showText;
+    }
+}
+
 - (void)start {
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+    
     self.timer = [NSTimer scheduledTimerWithTimeInterval:AnimationTime target:self selector:@selector(myStart) userInfo:nil repeats:YES];
 }
 

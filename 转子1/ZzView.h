@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ZzView : UIView
+
+@property (nonatomic, strong) NSString * showText;
 /**
  *  初始化
  *
