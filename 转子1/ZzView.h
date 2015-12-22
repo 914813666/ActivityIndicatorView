@@ -15,7 +15,7 @@
  *  初始化
  *
  *  @param frame 位置
- *  @param colos 8个颜色，从上开始顺时针方向
+ *  @param colos 8个颜色，从右上开始顺时针方向
  *
  *  @return <#return value description#>
  */

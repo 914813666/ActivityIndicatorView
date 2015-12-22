@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _imageView.hidden = YES;
     
     _dataSource = [NSMutableArray array];
     for (NSInteger i = 1; i <= 16; i++) {
@@ -74,15 +75,15 @@
 
     
     
-    ZzView * zv2 = [[ZzView alloc] initWithFrame: CGRectMake(0, 200, CGRectGetWidth(self.view.bounds), 200) addColors: colors2];
+    ZzView * zv2 = [[ZzView alloc] initWithFrame: CGRectMake(0, 200, CGRectGetWidth(self.view.bounds), 200) addColors: colors3];
 //    zv2.backgroundColor = [UIColor grayColor];
     [zv2 start];
     [self.view addSubview: zv2];
     
     
-    ZzView * zv3 = [[ZzView alloc] initWithFrame: CGRectMake(0, 400, 100, 100) addColors:colors3];
-    [self.view addSubview: zv3];
-    [zv3 start];
+//    ZzView * zv3 = [[ZzView alloc] initWithFrame: CGRectMake(0, 400, 100, 100) addColors:colors3];
+//    [self.view addSubview: zv3];
+//    [zv3 start];
 }
 
 - (void)didReceiveMemoryWarning {

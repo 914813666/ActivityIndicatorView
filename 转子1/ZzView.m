@@ -206,7 +206,6 @@
     UILabel * label = [[UILabel alloc] init];
     label.bounds = CGRectMake(0, 0, Radius * 2, Radius *2);
     label.backgroundColor = bgColor;
-    label.backgroundColor = bgColor;
     label.clipsToBounds = YES;
     label.layer.cornerRadius = CGRectGetWidth(label.bounds)/2;
     return label;
