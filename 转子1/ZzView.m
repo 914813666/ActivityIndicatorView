@@ -104,7 +104,7 @@
     }
 
     
-    //将原来大小分配为0.5 - 1.5 线性变化
+    //将原来大小分配为0.5 - 1.2 线性变化
     //透明度为 0.5 - 1 线性变化
     CGFloat multiple = (1.2 - 0.5) / _labels.count;
     CGFloat tmd = 0.8 / _labels.count;

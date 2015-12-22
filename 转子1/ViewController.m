@@ -58,14 +58,14 @@
                          RGBA(112.0,196.0,245.0,1),
                          RGBA(112.0,196.0,245.0,1)];
     
-    NSArray * colors3 = @[RGBA(241.0,196.0,25.0,1),
-                          RGBA(243.0,156.0,18.0,1),
-                          RGBA(226.0,124.0,33.0,1),
-                          RGBA(206.0,82.0,0,1),
-                          RGBA(224.0,74.0,58.0,1),
-                          RGBA(184.0,55.0,41.0,1),
-                          RGBA(155.0,89.0,185.0,1),
-                          RGBA(126.0,60.0,173.0,1)];
+    NSArray * colors3 = @[[UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:1.0] ,
+                          [UIColor colorWithRed:0.5 green:0.0 blue:0.5 alpha:1.0],
+                          [UIColor colorWithRed:1.0 green:0.5 blue:0.0 alpha:1.0],
+                          [UIColor colorWithRed:1.0 green:1.0 blue:0.0 alpha:1.0],
+                          [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0],
+                          [UIColor colorWithRed:0.0 green:1.0 blue:1.0 alpha:1.0],
+                          [UIColor colorWithRed:0.6 green:0.4 blue:0.2 alpha:1.0],
+                          [UIColor colorWithRed:0.498 green:0.498 blue:0.498 alpha:1.0]];
     
     _zv =({
         ZzView * zv = [[ZzView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetWidth(self.view.bounds)) addColors:colors];
