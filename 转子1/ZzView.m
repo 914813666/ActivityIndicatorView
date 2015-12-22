@@ -113,7 +113,7 @@
 //    NSLog(@"temd =%f",tmd);
     
     CGFloat currentScale = 0.5;
-    CGFloat currentAlpha = 1;
+    CGFloat currentAlpha = 0.2;
     for (NSInteger i = 0; i < _labels.count; i++) {
         UILabel * cLabel = (UILabel *) _labels[i];
         cLabel.alpha = currentAlpha;
@@ -122,7 +122,7 @@
         currentAlpha =  tmd * i  + 0.3;
         currentScale = fabs(multiple * i + 0.5);
         
-//        NSLog(@"第%d个 currentAlpha =%f ,currentScale=%f",i+1,currentAlpha,currentScale);
+        NSLog(@"第%d个 currentAlpha =%f ,currentScale=%f",i+1,currentAlpha,currentScale);
         [_currentScaleArray addObject: [NSNumber numberWithFloat:currentScale]];
         [_tmdArray addObject: [NSNumber numberWithFloat: currentAlpha]];
     }
