@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F372A061C43517B00824042 /* LzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F372A051C43517B00824042 /* LzView.m */; };
 		0F4D7BCF1C214E0E00551471 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D7BCE1C214E0E00551471 /* main.m */; };
 		0F4D7BD21C214E0E00551471 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D7BD11C214E0E00551471 /* AppDelegate.m */; };
 		0F4D7BD51C214E0E00551471 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D7BD41C214E0E00551471 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F372A041C43517B00824042 /* LzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzView.h; sourceTree = "<group>"; };
+		0F372A051C43517B00824042 /* LzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LzView.m; sourceTree = "<group>"; };
 		0F4D7BCA1C214E0E00551471 /* 转子1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "转子1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4D7BCE1C214E0E00551471 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F4D7BD01C214E0E00551471 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				0F4D7BCD1C214E0E00551471 /* Supporting Files */,
 				0F4D7C051C21522600551471 /* ZzView.h */,
 				0F4D7C061C21522600551471 /* ZzView.m */,
+				0F372A041C43517B00824042 /* LzView.h */,
+				0F372A051C43517B00824042 /* LzView.m */,
 			);
 			path = "转子1";
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				0F4D7BD21C214E0E00551471 /* AppDelegate.m in Sources */,
 				0F4D7C071C21522600551471 /* ZzView.m in Sources */,
 				0F4D7BCF1C214E0E00551471 /* main.m in Sources */,
+				0F372A061C43517B00824042 /* LzView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +382,7 @@
 				0F4D7BE31C214E0E00551471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

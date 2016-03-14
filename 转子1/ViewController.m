@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "ZzView.h"
+#import "LzView.h"
+
 #define  RGBA(r,g,b,a)  [UIColor colorWithRed: r /255.0 green: g / 255.0 blue: b /255.0 alpha:a]
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -84,6 +86,15 @@
 //    ZzView * zv3 = [[ZzView alloc] initWithFrame: CGRectMake(0, 400, 100, 100) addColors:colors3];
 //    [self.view addSubview: zv3];
 //    [zv3 start];
+    
+    
+//    LzView * lz1 = [[LzView alloc] initWithFrame:
+//                    CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
+    LzView * lz1 = [[LzView alloc] initWithFrame:
+                    CGRectMake(0, 400, 100, 100)];
+    [self.view addSubview: lz1];
+    lz1.backgroundColor = [UIColor yellowColor];
+
 }
 
 - (void)didReceiveMemoryWarning {

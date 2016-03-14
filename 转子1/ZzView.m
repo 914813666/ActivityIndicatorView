@@ -38,7 +38,7 @@
 }
 */
 
-- (instancetype)initWithFrame:(CGRect)frame addColors:(NSArray *)colos {
+- (instancetype)initWithFrame:(CGRect)frame addColors:(NSArray<UIColor *> *)colos {
     self = [super initWithFrame: frame];
     if (self) {
         _colors = colos;
@@ -63,7 +63,6 @@
     
     //    NSLog(@"%f",distance);
     
- 
     
     for (NSInteger i = 0 ;i < 8; i++) {
         UIColor * cColor = _colors[i];

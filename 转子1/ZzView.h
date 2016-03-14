@@ -19,7 +19,7 @@
  *
  *  @return <#return value description#>
  */
-- (instancetype)initWithFrame:(CGRect)frame addColors:(NSArray *) colos;
+- (instancetype)initWithFrame:(CGRect)frame addColors:(NSArray<UIColor *>*) colos;
 
 - (void) start;
 - (void) stop;
